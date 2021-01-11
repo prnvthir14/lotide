@@ -1,4 +1,4 @@
-const assertEqual = (actual, expected) => {
+const assertEqual = function (actual, expected) {
 
   if (actual === expected) {
    
@@ -14,7 +14,7 @@ const assertEqual = (actual, expected) => {
 
 
 //not calling assertEqual, passing the variable that points to our function
-module.export = assertEqual;
+module.exports = assertEqual;
 
 // assertEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual(1, 1);
