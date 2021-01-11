@@ -1,3 +1,5 @@
+// const assertEqual = require('./assertEqual.js');
+//WHy is this needed jere? works either way
 
 //need a function to check if two arrays are a perfect match:
 const eqArrays = (array1, array2) => {
