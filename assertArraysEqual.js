@@ -3,7 +3,7 @@ const eqArrays = require('./eqArrays');
 
 //alterting the assertEqual function to use the output from eqArrays 
 //to assert if two arrays are identical or not 
-const assertEqualArrays = (actual, expected) => {
+const assertArraysEqual = (actual, expected) => {
 
   if (eqArrays(actual, expected) === true) {
    
@@ -18,5 +18,5 @@ const assertEqualArrays = (actual, expected) => {
 };
 
 
-module.exports = assertEqualArrays;
+module.exports = assertArraysEqual;
 

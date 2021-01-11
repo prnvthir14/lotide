@@ -1,36 +1,4 @@
-//need a function to check if two arrays are a perfect match:
-const eqArrays = (array1, array2) => {
-  //if arrays are not the same length, they are automatically not a perfect match
-  if (array1.length !== array2.length){
-    return false;
-  }
-  //loop through array 1, if at any given index, array1 != array2; retrun false
-  for(let i = 0; i < array1.length; i++){
-    
-    if (array1[i] !== array2[i]){
-      return false
-    }
 
-  } return true;
-
-
-} 
-////WHY DO WE NEED EQ ARRAYS (ABOVE) as a part of this?
-const assertEqualArrays = (actual, expected) => {
-
-  if (actual === expected) {
-   
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  
-  } else {
-
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-
-
-  }
-
-};
- 
 
 //function: middle: to return the middle elements of an array
 
@@ -74,23 +42,7 @@ const middle = function (myArray) {
 
 }
 
-// //check: returns nothing when there are 2 or less elements in the array;
-// console.log(middle([7,8]));
-// console.log(middle([7]));
-// console.log(middle([]));
-
-
-// //check: returns middle element for an array with an odd# of elements
- console.log(middle([7,8,9,10,11]));
-
-// //check: returns middle 2 elements for an array with an even# of elements
-console.log(middle([7,8,9,10,11,12]));
-
-// //takes 2 parameters, actual and expected.
-// //parameter 1 = middle[]
-// //parameter 2 = the expected answer of calling middle
-assertEqualArrays(middle([7,8,9,10,11]), [9]) // should return true
-
+module.exports = middle;
 
 
 

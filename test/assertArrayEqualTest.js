@@ -1,10 +1,10 @@
 // put this in its own BiquadFilterNode
-const assertEqualArrays = require('../assertArrayEqual')
+const assertArraysEqual = require('../assertArraysEqual')
 
-assertEqualArrays([1, 2, 3], [1, 2, 4]) //should fail
+assertArraysEqual([1, 2, 3], [1, 2, 4]) //should fail
 
-assertEqualArrays([1, 2, 3], [1, 2, 3]) //should pass
+assertArraysEqual([1, 2, 3], [1, 2, 3]) //should pass
 
-assertEqualArrays([3], ["3"]) //should fail
+assertArraysEqual([3], ["3"]) //should fail
 
 
