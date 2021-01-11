@@ -12,7 +12,7 @@ const head = (array) => {
 
   } else {
 
-    return []
+    return 'empty array'
 
   }
 
