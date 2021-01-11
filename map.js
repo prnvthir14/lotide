@@ -21,9 +21,8 @@ const map = (arrayToMap, callback) => {
 
   }
 
-
   return results;
 
 }
 
-
+module.exports = map;

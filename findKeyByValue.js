@@ -1,19 +1,3 @@
-//function to search for a key on an object where its value matches a given value.
-const assertEqual = (actual, expected) => {
-
-  if (actual === expected) {
-   
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  
-  } else {
-
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-
-  }
-
-};
-
-
 const findKeyByValue = function (myObject,value) {
 
   //need to use value to return the key
@@ -41,16 +25,18 @@ const findKeyByValue = function (myObject,value) {
 
 }
 
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
+module.exports = findKeyByValue;
+
+// const bestTVShowsByGenre = { 
+//   sci_fi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama:  "The Wire"
+// };
 
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "comedy");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "comedy");
 
 
 

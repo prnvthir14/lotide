@@ -1,7 +1,7 @@
 //The function should take in a sentence (as a string)  
 //return a count of each of the letters in that sentence.
 
-const { builtinModules } = require("module");
+// const { builtinModules } = require("module");
 
 const countLetters = function(senentce) {
 
