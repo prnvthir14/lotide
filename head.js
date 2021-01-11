@@ -11,4 +11,4 @@ const head = (array) => {
 }; 
 
 
-assertEqual(head([1,2,4,5,6]),1);
+module.exports = head;

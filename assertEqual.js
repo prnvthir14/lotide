@@ -16,11 +16,3 @@ const assertEqual = function (actual, expected) {
 //not calling assertEqual, passing the variable that points to our function
 module.exports = assertEqual;
 
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-// assertEqual(1, 15);
-// assertEqual("Bootcamp", "Bootcamp");
-
-// // /*
-// let x = String.fromCodePoint(`U+2705`)
-// console.log(x)
